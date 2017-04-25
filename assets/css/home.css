@@ -320,11 +320,11 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  -moz-transformsm: translate(-50%, -80%);
-  -o-transform: translate(-50%, -80%);
-  -ms-transform: translate(-50%, -80%);
-  -webkit-transform: translate(-50%, -80%);
-  transform: translate(-50%, -80%);
+  -moz-transformsm: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%; }
 
 h1 {
@@ -357,7 +357,7 @@ h1 {
     display: none; }
 
   .home {
-    top: 60%; }
+    top: 48%; }
 
   .home-menu {
     display: block;
