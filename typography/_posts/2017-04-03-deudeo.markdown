@@ -1,0 +1,37 @@
+---
+layout: work
+title: DeuDeo Document
+permalink: /portfolio/typography/deodeo/
+brief: A document for the DeuDeo website.
+madein: 2016
+cover: /assets/img/typography/deudeo.jpg
+banner: /assets/img/typography/deudeo-banner.jpg
+catname: Typography
+caturl: /portfolio/typography/
+---
+
+Because I made the DeuDeo for the university, I needed to write a document to describe the design process. I wrote the text carefully and then designed the document using the knowledge I've learned from the typography course.
+
+**Preview**
+
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/deudeo1.jpg" title="Document Preview #1">
+        <img src="/assets/img/typography/content/deudeo1-small.jpg" alt="Document Preview #1">
+    </a>
+  </div>
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/deudeo2.jpg" title="Document Preview #2">
+        <img src="/assets/img/typography/content/deudeo2-small.jpg" alt="Document Preview #2">
+    </a>
+  </div>
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/deudeo3.jpg" title="Document Preview #3">
+        <img src="/assets/img/typography/content/deudeo3-small.jpg" alt="Document Preview #3">
+    </a>
+  </div>
+
+</div>
+
+[Download the document (PDF)](/assets/img/typography/content/deudeo.pdf)

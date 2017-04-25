@@ -1,0 +1,41 @@
+.messages {
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .list {
+    list-style: none;
+    padding: 0;
+    min-height: 600px;
+
+    li {
+      padding: 20px 10px;
+      border-bottom: 1px solid #DDD;
+    }
+
+    .user {
+      img {
+        width: 80px;
+        padding: 2px;
+        border: 1px solid #CCC;
+        background-color: #EEE;
+      }
+
+      .name {
+        margin: 10px 10px 0 10px;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    .body {
+      margin: 5px 10px 0 10px;
+    }
+
+    .meta {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #CCC;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+$screen-sm-min: 768px;
+
+body {
+  padding: 20px 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EEE;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 0;
+}
+
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background-color: #EEE;
+  color: #333;
+  border-radius: 4px;
+}
+
+.nav>li>a {
+  margin-right: 2px;
+  color: #333;
+}
+
+.navbar-header .navbar-toggle {
+  &:hover, &:focus {
+    border-color: #AAA;
+  }
+
+  .icon-bar {
+    background-color: #666;
+  }
+}
+
+.signin {
+  margin: 40px 0 80px;
+
+  .checkbox {
+    display: inline-block;
+  }
+
+  .forgot {
+    float: right;
+    padding-top: 7px;
+    display: inline-block;
+  }
+
+  .oauth {
+    margin: 60px 0 40px;
+
+    p {
+      font-size: 18px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-right: 2px;
+      width: 32px;
+      height: 34px;
+      background-position: left bottom;
+      background-size: 32px 32px;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+
+      &:hover {
+        background-position: left top;
+      }
+    }
+
+    .evernote {
+      background-image: url('../img/evernote.png');
+    }
+
+    .amazon {
+      background-image: url('../img/amazon.png');
+    }
+
+    .facebook {
+      background-image: url('../img/facebook.png');
+    }
+
+    .twitter {
+      background-image: url('../img/twitter.png');
+    }
+
+    .google {
+      background-image: url('../img/google.png');
+    }
+
+    .douban {
+      background-image: url('../img/douban.png');
+    }
+
+    .weibo {
+      background-image: url('../img/weibo.png');
+    }
+
+  }
+}
+
+/* Sign up */
+.signup {
+  margin: 40px 0 80px;
+
+  .signin {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+}
+
+/* About */
+.about, .contact {
+  min-height: 400px;
+  margin-top: 40px;
+
+  p {
+    font-size: 16px;
+  }
+}
+
+footer {
+  padding: 15px 0;
+  border-top: 1px solid #EEE;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    max-width: 960px;
+  }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+}

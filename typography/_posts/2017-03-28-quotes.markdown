@@ -1,0 +1,33 @@
+---
+layout: work
+title:  Quotes Posters
+permalink: /portfolio/typography/quotes/
+brief: Two posters for typography experiments.
+madein: 2014
+cover: /assets/img/typography/quotes.jpg
+banner: /assets/img/typography/quotes-banner.jpg
+catname: Typography
+caturl: /portfolio/typography/
+---
+
+We have a typography course in the first semester. As the homework for this course, I've made two posters to play with different fonts.
+
+<p>1. "You cannot find peace by avoiding life." by <em>Virginia Woolf</em>.</p>
+
+<div class="img-wrapper clearfix">
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/quote1.jpg" title="You cannot find peace by avoiding life.">
+        <img src="/assets/img/typography/content/quote1-small.jpg" alt="You cannot find peace by avoiding life.">
+    </a>
+  </div>
+</div>
+<p>2. "Taste is the enemy of the creativity." by <em>Pablo Picasso</em>.</p>
+
+<div class="img-wrapper clearfix">
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/quote2.jpg" title="Taste is the enemy of the creativity.">
+        <img src="/assets/img/typography/content/quote2-small.jpg" alt="Taste is the enemy of the creativity.">
+        <p class="title">Poster #2</p>
+    </a>
+  </div>
+</div>

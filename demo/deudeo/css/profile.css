@@ -1,0 +1,22 @@
+.profile {
+  margin: 40px 0 20px; }
+  .profile .avatar img {
+    width: 100%; }
+  .profile .message-btn, .profile .friend-btn {
+    text-align: center;
+    margin: 20px 0; }
+    .profile .message-btn button, .profile .friend-btn button {
+      width: 100%; }
+  .profile .info {
+    padding-left: 10px;
+    font-size: 16px; }
+    .profile .info > div {
+      margin: 5px 0; }
+    .profile .info .head {
+      font-weight: 800;
+      margin-right: 10px; }
+
+#sendMessageModal textarea {
+  height: 200px; }
+
+/*# sourceMappingURL=profile.css.map */

@@ -1,0 +1,34 @@
+<!doctype html>
+
+{% include head.html %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main">
+          {% include menu.html %}
+
+          <div class="main-container">
+              <div class="home wrapper clearfix">
+                <h1><span>Jack</span> Schwarz</h1>
+                <p class="desc">Designer. Developer. Filmmaker.</p>
+
+                <nav class="home-menu">
+                  <ul>
+                    <li><a href="{{ '/about/' | relative_url}}">About</a></li>
+                    <li><a href="{{ '/portfolio/' | relative_url}}">Portfolio</a></li>
+                    <li><a href="{{ '/contact/' | relative_url}}">Contact</a></li>
+                  </ul>
+                </nav>
+
+              </div> <!-- #main -->
+          </div> <!-- #main-container -->
+
+          <div class="push"></div>
+        </div> <!-- #main-->
+
+        {% include footer.html %}
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+
+{% include head.html %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main work">
+
+          {% include menu.html %}
+
+          <div class="main-container">
+              <div class="wrapper clearfix">
+                <article>
+                  <header>
+                    <div class="banner">
+                      <img src="{{ page.banner }}" alt="banner for {{ page.title | escape }}">
+                    </div>
+
+                    <h1>{{ page.title }}</h1>
+                    <p class="cat">{{ page.madein }}<span class="divider">|</span><a href="{{ page.caturl | escape }}">{{ page.catname | escape }}</a></p>
+                  </header>
+
+                  {{ content }}
+
+                </article>
+
+              </div> <!-- #wrapper -->
+          </div> <!-- #main-container -->
+
+          <div class="push"></div>
+        </div> <!-- #main-->
+
+        {% include footer.html %}
+
+    </body>
+</html>

@@ -1,0 +1,364 @@
+$screen-sm-min: 768px;
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px;
+}
+
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background-color: #EEE;
+  color: #333;
+}
+
+.nav>li>a {
+  margin-right: 2px;
+  color: #333;
+}
+
+.navbar-header .navbar-toggle {
+  &:hover, &:focus {
+    border-color: #AAA;
+  }
+
+  .icon-bar {
+    background-color: #666;
+  }
+}
+
+.manager {
+  padding-top: 50px;
+
+  .navbar {
+    border-bottom: 2px solid #BE784B;
+    background-image: none;
+    background-color: #FFF;
+  }
+
+  .sidebar {
+    display: none;
+
+    .nav>li.active>a {
+      background-color: #F5F5F5;
+      color: #C43704;
+      border-left: 6px solid #C43704;
+
+      &:hover, &:focus {
+        border-left: 6px solid #C43704;
+      }
+    }
+
+    .nav>li>a:hover,
+    .nav>li>a:focus {
+      background-color: #DDD;
+      color: #333;
+      border-left: 6px solid #DDD;
+    }
+
+    .nav>li>a {
+      color: #333;
+      border-left: 6px solid #F5F5F5;
+    }
+  }
+
+  .nav-sidebar {
+    margin-left: -21px;
+    margin-bottom: 20px;
+    margin-right: -21px;
+
+    .sub {
+      background-color: #FFF;
+      padding: 10px 0;
+
+      li>a {
+        padding-left: 30px;
+
+        &:hover, &:focus {
+          background-color: #EEE;
+          border-left: 6px solid #EEE;
+        }
+      }
+
+      li.active>a {
+        background-color: #FFF;
+      }
+    }
+
+    .filter {
+      width: 90%;
+      margin: 0 auto 10px;
+    }
+  }
+
+  .main {
+
+    h1 {
+      font-size: 18px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #EEE;
+    }
+
+    .menubar {
+      margin: 10px 0;
+
+      .form-control {
+        display: inline-block;
+        width: auto;
+        margin-right: 6px;
+      }
+
+      #all_check {
+        margin: 0 10px;
+      }
+
+      label {
+        font-weight: 400;
+      }
+
+      .actions {
+        width: 100px;
+      }
+
+      .checkbox, .dropdown, .viewstyle {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        vertical-align: middle;
+      }
+
+      .show-notes {
+        margin: 0 22px;
+      }
+
+      .export {
+        color: #333;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:hover, &:active {
+          text-decoration: none;
+          color: #777;
+        }
+      }
+
+      .viewstyle {
+        float: right;
+        margin-top: 8px;
+
+        a {
+          color: #333;
+
+          &:hover, &:active, &.active {
+            color: #C43704;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .clippings {
+
+      .check {
+        margin: 0 10px;
+      }
+
+      .title {
+        background-color: #EEE;
+        padding: 10px 0 10px 10px;
+        border-top: 1px solid #CCC;
+        cursor: pointer;
+      }
+
+      h2 {
+        font-size: 14px;
+        margin-top: 4px;
+        margin-bottom: 0;
+        display: inline-block;
+
+        em {
+          margin-left: 20px;
+          color: #777;
+        }
+      }
+
+      .misc {
+        margin: 4px 0 0 10px;
+        color: #777;
+        font-weight: 700;
+
+        .item {
+          margin-right: 20px;
+          font-size: 12px;
+        }
+
+        em {
+          color: #333;
+        }
+
+        .view-all {
+          margin-right: 10px;
+
+          a {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+          }
+        }
+      }
+
+      .content {
+        margin-left:10px;
+
+        .tags {
+          font-size: 12px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .operations {
+        margin-top: 5px;
+
+        .left, .right {
+          margin-bottom: 10px;
+        }
+
+        &.right {
+          text-align: right;
+        }
+
+        .item {
+          margin-right: 10px;
+          background-color: #EEE;
+          padding: 4px 6px;
+          border-radius: 2px;
+          cursor: pointer;
+          color: #777;
+
+          &:hover, &:active {
+            color: #333;
+            text-decoration: none;
+          }
+
+        }
+
+        .favorite {
+          &:hover, &:active, &.active {
+            color: #FFAC33;
+            text-decoration: none;
+          }
+        }
+
+        .collapse-notes {
+          margin-left: 5px;
+          font-size: 12px;
+          background-color: #FFF;
+          color: #337AB7;
+
+          &:hover, &:active {
+            color: #23527C;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .notes {
+
+        h3 {
+          margin: 0 0 10px 0;
+          position: relative;
+          font-size: 10px;
+          color: #AAA;
+          text-transform: uppercase;
+          z-index: 1;
+          overflow: hidden;
+          text-align: center;
+
+          &:before, &:after {
+            position: absolute;
+            top: 51%;
+            overflow: hidden;
+            width: 48%;
+            height: 1px;
+            content: '\a0';
+            background-color: #DDD;
+            margin-left: 2%;
+          }
+
+          &:before {
+            margin-left: -50%;
+            text-align: right;
+          }
+        }
+        
+        &>.item {
+          margin: 0 0 10px 40px;
+          padding: 10px;
+          border: 1px solid #D9B282;
+          border-radius: 4px;
+
+          .text .glyphicon {
+            color: #D9B282;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+footer {
+  padding: 15px;
+  border-top: 1px solid #EEE;
+}
+
+@media (min-width: $screen-sm-min) {
+  .manager {
+    .sidebar {
+      position: fixed;
+      top: 51px;
+      bottom: 0;
+      left: 0;
+      z-index: 1000;
+      display: block;
+      padding: 20px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      background-color: #F5F5F5;
+      border-right: 1px solid #EEE;
+    }
+
+    .main {
+      min-width: 908px;
+
+      .view-all {
+        float: right;
+      }
+
+      .clippings {
+        .misc, .content {
+          margin-left: 34px;
+        }
+
+        .content {
+          margin-top: 20px;
+        }
+
+        .title {
+          padding-left: 0;
+        }
+
+      }
+
+      .right {
+        text-align: right;
+      }
+
+    }
+  }
+}

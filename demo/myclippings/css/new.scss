@@ -1,0 +1,115 @@
+$screen-sm-min: 768px;
+
+body {
+  padding: 20px 0;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px 0;
+}
+
+.nav>li.active>a,
+.nav>li>a:hover,
+.nav>li>a:focus {
+  background-color: #EEE;
+  color: #333;
+  border-radius: 4px;
+}
+
+.nav>li>a {
+  margin-right: 2px;
+  color: #333;
+}
+
+.navbar-header .navbar-toggle {
+  &:hover, &:focus {
+    border-color: #AAA;
+  }
+
+  .icon-bar {
+    background-color: #666;
+  }
+}
+
+.main {
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  border: 4px dashed #AAA;
+  color: #000;
+  padding: 30px 0;
+
+  .lead {
+    font-size: 28px;
+    margin: 0 auto 20px;
+    font-weight: 200;
+    line-height: 1.4;
+
+    em {
+      font-weight: 400;
+    }
+  }
+
+  .click-upload {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .where {
+    margin:60px 0 0 10px;
+    font-size: 12px;
+    text-align: left;
+
+    a {
+      color: #000;
+    }
+  }
+}
+
+.features {
+  margin: 20px 0;
+}
+
+footer {
+  padding: 15px 0;
+  border-top: 1px solid #EEE;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    max-width: 960px;
+  }
+
+  .navbar-right {
+    margin-right: 0;
+  }
+
+  .main {
+    padding-top: 80px;
+
+    .lead {
+      font-size: 40px;
+    }
+  }
+
+  .login-form {
+    padding: 40px 0;
+
+    .form-el {
+      margin-right: 10px;
+    }
+  }
+
+  .features {
+    margin: 40px 0;
+  }
+}

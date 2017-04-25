@@ -1,0 +1,40 @@
+---
+layout: work
+title:  Say Love
+permalink: /portfolio/webdesign/saylove/
+brief: Send a secret love letter to someone you love.
+madein: 2012
+cover: /assets/img/webdesign/saylove.jpg
+banner: /assets/img/webdesign/saylove-banner.jpg
+catname: Web Design
+caturl: /portfolio/webdesign/
+---
+
+Let's say you have a crush one someone. You want to ask if he or she has the same feeling for you. But you're afraid that the question would break your friendship. 
+
+_Say Love_ is going to solve this difficult problem. It works in this way: On _Say Love_, you can write a letter to someone you have a crush on, but the receiver doesn't know you wrote the letter until he or she write a letter to you either.
+
+You can also make your letter public, then other users will see your letter, of course, without your name on it. All public letters will be displayed on the website.
+
+_Say Love_ was designed with Twitter Bootstrap in the browser. Some graphic elements were drawn by my friend Lin. I did all other design work and developed the website using Ruby on Rails.
+
+**Screenshots**
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/saylove-list.jpg" title="Screenshot: Homepage">
+        <img src="/assets/img/webdesign/content/saylove-list-small.jpg" alt="Screenshot: Homepage">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/saylove-write.jpg" title="Screenshot: Writing Page">
+        <img src="/assets/img/webdesign/content/saylove-write-small.jpg" alt="Screenshot: Writing Page">
+    </a>
+  </div>
+
+</div>
+
+[Visit the prototype](/demo/saylove/list.html)
+
+[Check the code on Github](https://github.com/zhuoqun/saylove)

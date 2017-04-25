@@ -1,0 +1,222 @@
+.navbar-brand:hover,
+.navbar-brand:focus,
+.navbar-brand {
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  padding: 15px; }
+
+.nav > li.active > a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #EEE;
+  color: #333; }
+
+.nav > li > a {
+  margin-right: 2px;
+  color: #333; }
+
+.navbar-header .navbar-toggle:hover, .navbar-header .navbar-toggle:focus {
+  border-color: #AAA; }
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: #666; }
+
+.manager {
+  padding-top: 50px; }
+  .manager .navbar {
+    border-bottom: 2px solid #BE784B;
+    background-image: none;
+    background-color: #FFF; }
+  .manager .sidebar {
+    display: none; }
+    .manager .sidebar .nav > li.active > a {
+      background-color: #F5F5F5;
+      color: #C43704;
+      border-left: 6px solid #C43704; }
+      .manager .sidebar .nav > li.active > a:hover, .manager .sidebar .nav > li.active > a:focus {
+        border-left: 6px solid #C43704; }
+    .manager .sidebar .nav > li > a:hover,
+    .manager .sidebar .nav > li > a:focus {
+      background-color: #DDD;
+      color: #333;
+      border-left: 6px solid #DDD; }
+    .manager .sidebar .nav > li > a {
+      color: #333;
+      border-left: 6px solid #F5F5F5; }
+  .manager .nav-sidebar {
+    margin-left: -21px;
+    margin-bottom: 20px;
+    margin-right: -21px; }
+    .manager .nav-sidebar .sub {
+      background-color: #FFF;
+      padding: 10px 0; }
+      .manager .nav-sidebar .sub li > a {
+        padding-left: 30px; }
+        .manager .nav-sidebar .sub li > a:hover, .manager .nav-sidebar .sub li > a:focus {
+          background-color: #EEE;
+          border-left: 6px solid #EEE; }
+      .manager .nav-sidebar .sub li.active > a {
+        background-color: #FFF; }
+    .manager .nav-sidebar .filter {
+      width: 90%;
+      margin: 0 auto 10px; }
+  .manager .main h1 {
+    font-size: 18px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #EEE; }
+  .manager .main .menubar {
+    margin: 10px 0; }
+    .manager .main .menubar .form-control {
+      display: inline-block;
+      width: auto;
+      margin-right: 6px; }
+    .manager .main .menubar #all_check {
+      margin: 0 10px; }
+    .manager .main .menubar label {
+      font-weight: 400; }
+    .manager .main .menubar .actions {
+      width: 100px; }
+    .manager .main .menubar .checkbox, .manager .main .menubar .dropdown, .manager .main .menubar .viewstyle {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      vertical-align: middle; }
+    .manager .main .menubar .show-notes {
+      margin: 0 22px; }
+    .manager .main .menubar .export {
+      color: #333;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer; }
+      .manager .main .menubar .export:hover, .manager .main .menubar .export:active {
+        text-decoration: none;
+        color: #777; }
+    .manager .main .menubar .viewstyle {
+      float: right;
+      margin-top: 8px; }
+      .manager .main .menubar .viewstyle a {
+        color: #333; }
+        .manager .main .menubar .viewstyle a:hover, .manager .main .menubar .viewstyle a:active, .manager .main .menubar .viewstyle a.active {
+          color: #C43704;
+          text-decoration: none; }
+  .manager .main .clippings .check {
+    margin: 0 10px; }
+  .manager .main .clippings .title {
+    background-color: #EEE;
+    padding: 10px 0 10px 10px;
+    border-top: 1px solid #CCC;
+    cursor: pointer; }
+  .manager .main .clippings h2 {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    display: inline-block; }
+    .manager .main .clippings h2 em {
+      margin-left: 20px;
+      color: #777; }
+  .manager .main .clippings .misc {
+    margin: 4px 0 0 10px;
+    color: #777;
+    font-weight: 700; }
+    .manager .main .clippings .misc .item {
+      margin-right: 20px;
+      font-size: 12px; }
+    .manager .main .clippings .misc em {
+      color: #333; }
+    .manager .main .clippings .misc .view-all {
+      margin-right: 10px; }
+      .manager .main .clippings .misc .view-all a {
+        display: block;
+        font-weight: 400;
+        font-size: 12px; }
+  .manager .main .clippings .content {
+    margin-left: 10px; }
+    .manager .main .clippings .content .tags {
+      font-size: 12px;
+      margin-bottom: 10px; }
+  .manager .main .clippings .operations {
+    margin-top: 5px; }
+    .manager .main .clippings .operations .left, .manager .main .clippings .operations .right {
+      margin-bottom: 10px; }
+    .manager .main .clippings .operations.right {
+      text-align: right; }
+    .manager .main .clippings .operations .item {
+      margin-right: 10px;
+      background-color: #EEE;
+      padding: 4px 6px;
+      border-radius: 2px;
+      cursor: pointer;
+      color: #777; }
+      .manager .main .clippings .operations .item:hover, .manager .main .clippings .operations .item:active {
+        color: #333;
+        text-decoration: none; }
+    .manager .main .clippings .operations .favorite:hover, .manager .main .clippings .operations .favorite:active, .manager .main .clippings .operations .favorite.active {
+      color: #FFAC33;
+      text-decoration: none; }
+    .manager .main .clippings .operations .collapse-notes {
+      margin-left: 5px;
+      font-size: 12px;
+      background-color: #FFF;
+      color: #337AB7; }
+      .manager .main .clippings .operations .collapse-notes:hover, .manager .main .clippings .operations .collapse-notes:active {
+        color: #23527C;
+        text-decoration: none; }
+  .manager .main .clippings .notes h3 {
+    margin: 0 0 10px 0;
+    position: relative;
+    font-size: 10px;
+    color: #AAA;
+    text-transform: uppercase;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center; }
+    .manager .main .clippings .notes h3:before, .manager .main .clippings .notes h3:after {
+      position: absolute;
+      top: 51%;
+      overflow: hidden;
+      width: 48%;
+      height: 1px;
+      content: '\a0';
+      background-color: #DDD;
+      margin-left: 2%; }
+    .manager .main .clippings .notes h3:before {
+      margin-left: -50%;
+      text-align: right; }
+  .manager .main .clippings .notes > .item {
+    margin: 0 0 10px 40px;
+    padding: 10px;
+    border: 1px solid #D9B282;
+    border-radius: 4px; }
+    .manager .main .clippings .notes > .item .text .glyphicon {
+      color: #D9B282; }
+
+footer {
+  padding: 15px;
+  border-top: 1px solid #EEE; }
+
+@media (min-width: 768px) {
+  .manager .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #F5F5F5;
+    border-right: 1px solid #EEE; }
+  .manager .main {
+    min-width: 908px; }
+    .manager .main .view-all {
+      float: right; }
+    .manager .main .clippings .misc, .manager .main .clippings .content {
+      margin-left: 34px; }
+    .manager .main .clippings .content {
+      margin-top: 20px; }
+    .manager .main .clippings .title {
+      padding-left: 0; }
+    .manager .main .right {
+      text-align: right; } }
+
+/*# sourceMappingURL=manager.css.map */

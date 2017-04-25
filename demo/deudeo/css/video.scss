@@ -1,0 +1,194 @@
+.video-single {
+  margin-top: 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin: 0 0 20px;
+  }
+
+
+  .box {
+    padding: 10px;
+    //border: 1px solid #CCC;
+  }
+
+  .meta {
+    margin: 20px 0 40px;
+
+    .views {
+      font-size: 1.2em;
+      font-weight: 700;
+    }
+
+    .item {
+      margin-left: 10px;
+      color: #222;
+
+      &:hover {
+        text-decoration: none;
+        color: #666;
+      }
+    }
+  }
+
+  .comments {
+    .avatar {
+      width: 60px;
+      float: left;
+    }
+
+    .comment-input {
+      float: left;
+      width: 85%;
+      height: 60px;
+      margin-left: 20px;
+    }
+
+    .input {
+      margin-bottom: 60px;
+    }
+
+    .list {
+      li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #DDD;
+
+        &:last-child {
+          margin-bottom: 0;
+          border-bottom: none;
+        }
+      }
+
+      .user {
+        img {
+          width: 60px;
+        }
+
+        .name {
+          text-align: center;
+          font-weight: 700;
+          margin-top: 5px;
+        }
+      }
+
+      .content {
+        float: left;
+        margin-left: 20px;
+      }
+
+      .post-time {
+        float: right;
+        color: #AAA;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .mini-profile {
+    margin-bottom: 20px;
+
+    img {
+      width: 100px;
+      float: left;
+    }
+
+    .info {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+
+  .online-users {
+    ul {
+      li {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 20%;
+      }
+
+      img {
+        width: 100%;
+        padding: 2px;
+        background: #EEE;
+        border: 1px solid #CCC;
+      }
+    }
+  }
+
+  .related-videos {
+    margin-top: 20px;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 40%;
+      float: left;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    .desc {
+      float: left;
+      margin-left: 10px;
+      padding: 4px 0;
+
+      .cate {
+        margin-top: 25px;
+        color: #AAA;
+      }
+    }
+  }
+
+  #quizModal, #quizModal2, #endModal {
+    position: absolute;
+    height: 422px;
+    left: 15px;
+    right: 15px;
+    overflow-y: hidden;
+
+    .modal-dialog {
+      width: 700px;
+      margin-top: 80px;
+    }
+
+    .quiz-tip {
+      margin: 15px 0 0;
+      padding: 15px;
+      font-size: 16px;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    form {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+
+  #endModal p {
+    font-size: 18px;
+    text-align: center;
+    
+    span {
+      color: green;
+      font-size: 24px;
+      font-weight: 800;
+    }
+  }
+
+}

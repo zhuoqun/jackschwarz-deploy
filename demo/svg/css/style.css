@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: transparent no-repeat top url(../img/iron-throne-bg.jpg);
+  background-size: cover;
+  min-height: 100%;
+}
+
+p {
+  font-size: 100px;
+  color: #333;
+  margin: 20px;
+}
+
+#blindeyes img {
+    position: absolute;
+    opacity: 0.2;
+}
+
+.img1 {
+  left: 20px;
+  top: 30px;
+}
+
+.img2 {
+  left: 120px;
+  top: 300px;
+}
+
+.img3 {
+  left: 600px;
+  top: 20px;
+}
+
+.img4 {
+  right: 20px;
+  top: 50px;
+}
+
+.img5 {
+  left: 400px;
+  top: 100px;
+}
+
+.img6 {
+  right: 60px;
+  bottom: 30px;
+}
+
+.img7 {
+  left: 100px;
+  bottom: 50px;
+}
+
+.img8 {
+  left: 500px;
+  top: 200px;
+}
+
+.img9 {
+  right: 240px;
+  top: 200px;
+}
+
+.img10 {
+  left: 600px;
+  bottom: 20px;
+}
+
+.img11 {
+  left: 400px;
+  bottom: 60px;
+}
+
+.img12 {
+  right: 400px;
+  bottom: 200px;
+}
+
+.img13 {
+  right: 300px;
+  top: 10px;
+}
+
+.img14 {
+  left: 620px;
+  bottom: 100px;
+}
+
+.img15 {
+  left: 300px;
+  bottom: 200px;
+}
+
+.img16 {
+  right: 440px;
+  top: 100px;
+}
+
+.img17 {
+  left: 40px;
+  top: 200px;
+}
+
+.img18 {
+  left: 200px;
+  top: 60px;
+}
+
+.img19 {
+  right: 200px;
+  bottom: 10px;
+}
+
+.img20 {
+  right: 100px;
+  top: 240px;
+}
+
+#zitat {
+  width: 440px;
+  display: none;
+  margin: 80px auto 0;
+}
+
+.footer p {
+  margin-top: 40px;
+  font-size: 10px;
+  color: #777;
+}
+
+.footer a {
+  color: #777;
+  text-decoration: none;
+}

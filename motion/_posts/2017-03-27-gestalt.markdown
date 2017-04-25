@@ -1,0 +1,20 @@
+---
+layout: work
+title:  The Gestalt Principles
+permalink: /portfolio/video/gestalt/
+brief: How people tend to organize visual elements.
+madein: 2015
+cover: /assets/img/video/gestalt.jpg
+banner: /assets/img/video/gestalt-banner.jpg
+catname: Video
+caturl: /portfolio/video/
+---
+
+The gestalt principles are a set of principles that refers to theories of visual perception developed by German psychologists in the 1920s. These theories attempt to explain how people organize visual elements into groups or unified wholes. The principles include similarity, continuation, closure, proximity, etc.
+
+I'm pretty interested in Motion Design, so I decided to make a short video to explain these principles. I did the motion design and my classmate Daniel Janßen composed the background music.
+
+**Watch the video**
+<div class="video-wrapper">
+  <iframe src="https://player.vimeo.com/video/135116779?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>

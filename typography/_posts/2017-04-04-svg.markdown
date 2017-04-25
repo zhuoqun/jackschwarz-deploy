@@ -1,0 +1,29 @@
+---
+layout: work
+title: Typography Animation
+permalink: /portfolio/typography/svg-animation/
+brief: A typography animation experiment with SVG.
+madein: 2015
+cover: /assets/img/typography/svg.jpg
+banner: /assets/img/typography/svg-banner.jpg
+catname: Typography
+caturl: /portfolio/typography/
+---
+
+Scalable Vector Graphics (SVG) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. All major modern web browsers have SVG support, so it's very useful if you want to create an animation in the browser.
+
+I was interested in both typography and SVG, so I created this typography animation with the Snap.svg JavaScript Library.
+
+**Preview**
+
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/typography/content/svg-animation.jpg" title="Preview">
+        <img src="/assets/img/typography/content/svg-animation.jpg" alt="In the land of the blind, the one-eyed man is king.">
+    </a>
+  </div>
+
+</div>
+
+[View the demo](/demo/svg/typ.html)

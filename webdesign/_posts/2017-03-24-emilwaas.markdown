@@ -1,0 +1,41 @@
+---
+layout: work
+title:  Emil Waas
+permalink: /portfolio/webdesign/emilwaas/
+brief: A website for the German artist Emil Waas.
+madein: 2016
+cover: /assets/img/webdesign/emil-waas.jpg
+banner: /assets/img/webdesign/emil-waas-banner.jpg
+catname: Web Design
+caturl: /portfolio/webdesign/
+---
+
+Emil Ludwig Waas is a German artist, born in 1919, died in 1981.  He was a medical officer on the eastern front during World War II. In 1945, he became a prisoner in Russia. He created more than 900 miniatures in five years of imprisonment. He painted on tiny pieces of newspapers, maps or calendars. Because of the lack of color and pencils, he painted with his fingers and woods with color from leaves, grass or even his own blood.
+
+At the end of 2016, his miniatures were exhibited in Trier. And Hochschule Trier also made a website to show the story and works of Emil Waas. Marcel Heinz, Adam Lorek and I designed and developed the website based on Wordpress. Marcel made the Photoshop mock-ups, then I created a prototype in HTML. After that Adam and I implemented the Wordpress theme.
+
+**Screenshots**
+
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/elwa1.jpg" title="Screenshot: Homepage">
+        <img src="/assets/img/webdesign/content/elwa1-small.jpg" alt="Screenshot: Homepage">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/elwa2.jpg" title="Screenshot: Intro">
+        <img src="/assets/img/webdesign/content/elwa2-small.jpg" alt="Screenshot: Intro">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/elwa3.jpg" title="Screenshot: Gallery">
+        <img src="/assets/img/webdesign/content/elwa3-small.jpg" alt="Screenshot: Gallery">
+    </a>
+  </div>
+
+</div>
+
+[Visit the website](http://emil-waas.de/)

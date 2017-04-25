@@ -1,0 +1,31 @@
+.main {
+  margin-top: 40px;
+  min-height: 600px;
+}
+
+.search-form {
+  float: left;
+  margin-left: 20px;
+
+  .input-group {
+    width: 400px;
+  }
+}
+
+.sidebar {
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 10px 0 40px;
+  font-size: 16px;
+
+  .nav {
+    a {
+      padding-left: 30px;
+    }
+
+    .active > a {
+      color: #555;
+      background-color: #E7E7E7;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+          <div class="header-container">
+              <header class="clearfix">
+                <div id="headbar">
+                  {% if page.layout != "work" %}
+                  <span>{{ page.title | escape }}</span>
+                  {% endif %}
+                </div>
+                <div id="menu_icon">
+                  <span></span>
+                </div>
+
+                {% if page.title %}
+                <div id="home_icon">
+                  <a href="{{ '/' | relative_url}}">Back to Home</a>
+                </div>
+                {% endif %}
+              </header>
+          </div>
+
+          <div class="menu-overlay">
+            <nav class="menu">
+              <ul>
+                <li><a href="{{ '/about/' | relative_url}}">About</a></li>
+                <li><a href="{{ '/portfolio/' | relative_url}}">Portfolio</a></li>
+                <li><a href="{{ '/contact/' | relative_url}}">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+

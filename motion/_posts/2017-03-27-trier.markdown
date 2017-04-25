@@ -1,0 +1,31 @@
+---
+layout: work
+title:  With Love In Trier
+permalink: /portfolio/video/trier/
+brief: A love story between a Chinese student and a French girl.
+madein: 2017
+cover: /assets/img/video/trier.jpg
+banner: /assets/img/video/trier-banner.jpg
+catname: Video
+caturl: /portfolio/video/
+---
+
+There is a "Yearlong Project" in our major in Hochschule Trier. We can do anything related to the theme "Media". So I decided to make a feature film.
+
+With Love in Trier tells a story between a Chinese student and a French girl. Alina, a girl from Paris, took a visit in Trier and met Jack, a Chinese student, at the freshmen party. They both thought the party was boring and went to the beautiful inner city of Trier to take a tour. During the tour, they talked lots of different topics.
+
+I wrote, directed and produced this film. I was also the leading actor in the film. And I did all the post-productions on my own. Although there was almost no budget, I still got the film done on time. 
+
+The film lasts 70 minutes. It takes us several months to finish it. I gained enormous experience from making the film. I learned lots of things like how to manage a crew, how to write a screenplay, how to draw storyboards, how to edit the film, how to do color grading, etc.
+
+**Watch the trailer**
+
+<div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HyHNX-2y1xw" frameborder="0" allowfullscreen></iframe>
+</div>
+
+**Watch the film**
+
+<div class="video-wrapper">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cBNyYMzHyOw" frameborder="0" allowfullscreen></iframe>
+</div>

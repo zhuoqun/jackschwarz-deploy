@@ -1,0 +1,418 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Common
+   ========================================================================== */
+html {
+  background-color: #000;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%; }
+
+body {
+  font: 14px/22px 'Open Sans', Arial, sans-serif;
+  color: #AAA;
+  font-weight: 300;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ECECEC;
+  letter-spacing: 5px;
+  font-family: 'Roboto', Arial, sans-serif; }
+
+p {
+  font-family: 'Open Sans', Arial, sans-serif; }
+
+img {
+  opacity: 0;
+  -webkit-transition: opacity 1.25s;
+  -moz-transition: opacity 1.25s;
+  -ms-transition: opacity 1.25s;
+  -o-transition: opacity 1.25s;
+  transition: opacity 1.25s; }
+
+.main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -3em; }
+
+.push {
+  height: 3em; }
+
+#headbar {
+  position: fixed;
+  top: 0;
+  height: 3.5em;
+  width: 100%;
+  background: #000;
+  z-index: 20;
+  text-align: center;
+  overflow: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 100;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.6); }
+  #headbar span {
+    display: inline-block;
+    margin-top: 46px;
+    font-size: 1.2em;
+    color: #fff;
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-transition: margin-top 1.25s, opacity 1.25s;
+    -moz-transition: margin-top 1.25s, opacity 1.25s;
+    -ms-transition: margin-top 1.25s, opacity 1.25s;
+    -o-transition: margin-top 1.25s, opacity 1.25s;
+    transition: margin-top 1.25s, opacity 1.25s; }
+
+#footer {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.8em;
+  color: #666;
+  padding-top: 1em; }
+
+#home_icon {
+  position: fixed;
+  top: .9em;
+  right: .5em;
+  z-index: 999; }
+  #home_icon a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-indent: -9999px;
+    background: url(../img/home.png) no-repeat left top;
+    cursor: pointer; }
+    #home_icon a:hover {
+      background-position: left bottom; }
+
+#menu_icon {
+  width: 2em;
+  height: 3em;
+  position: fixed;
+  top: .5em;
+  left: .5em;
+  display: block;
+  cursor: pointer;
+  z-index: 999; }
+  #menu_icon span {
+    position: absolute;
+    top: 1.5em;
+    display: block;
+    width: 2em;
+    height: 2px;
+    background: #AAA;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    #menu_icon span:before, #menu_icon span:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: #AAA;
+      left: 0;
+      moz-transform-origin: center center;
+      -o-transform-origin: center center;
+      -ms-transform-origin: center center;
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+    #menu_icon span:before {
+      top: -0.5em; }
+    #menu_icon span:after {
+      bottom: -0.5em; }
+  #menu_icon:hover span {
+    background: #ECECEC; }
+    #menu_icon:hover span:before, #menu_icon:hover span:after {
+      background: #ECECEC; }
+  #menu_icon.open span {
+    background: 0 0; }
+    #menu_icon.open span:after {
+      background: #AAA;
+      -moz-transformsm: rotate(-45deg) translate(0.2em, -0.5em);
+      -o-transform: rotate(-45deg) translate(0.2em, -0.5em);
+      -ms-transform: rotate(-45deg) translate(0.2em, -0.5em);
+      -webkit-transform: rotate(-45deg) translate(0.2em, -0.5em);
+      transform: rotate(-45deg) translate(0.2em, -0.5em); }
+    #menu_icon.open span:before {
+      background: #AAA;
+      -moz-transformsm: rotate(45deg) translate(0.2em, 0.5em);
+      -o-transform: rotate(45deg) translate(0.2em, 0.5em);
+      -ms-transform: rotate(45deg) translate(0.2em, 0.5em);
+      -webkit-transform: rotate(45deg) translate(0.2em, 0.5em);
+      transform: rotate(45deg) translate(0.2em, 0.5em); }
+
+.menu-overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 2.571em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  -o-transition: height 0.5s;
+  transition: height 0.5s; }
+  .menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 3em auto 0; }
+    .menu-overlay ul li {
+      display: block;
+      width: 70%;
+      max-width: 10em;
+      margin: 0 auto 1.2em;
+      padding-bottom: .6em;
+      border-bottom: 1px solid #333; }
+      .menu-overlay ul li a {
+        color: #ECECEC;
+        text-decoration: none;
+        cursor: pointer;
+        -webkit-transition: color 0.5s;
+        -moz-transition: color 0.5s;
+        -ms-transition: color 0.5s;
+        -o-transition: color 0.5s;
+        transition: color 0.5s; }
+        .menu-overlay ul li a span {
+          font-size: 0.555em; }
+        .menu-overlay ul li a:hover {
+          color: #AAA; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 768px) {
+  .menu-overlay {
+    font-size: 3.428em; }
+    .menu-overlay ul li {
+      max-width: 14em; }
+
+  #menu_icon {
+    left: 1.5em; }
+
+  #home_icon {
+    right: 1.5em; }
+
+  #headbar {
+    height: 4em; }
+    #headbar span {
+      font-size: 1.5em;
+      margin-top: 52px; } }
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     ===============*/
+  #headbar {
+    height: 4.5em; }
+    #headbar span {
+      margin-top: 62px; } }
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+.invisible {
+  visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+.home {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -moz-transformsm: translate(-50%, -80%);
+  -o-transform: translate(-50%, -80%);
+  -ms-transform: translate(-50%, -80%);
+  -webkit-transform: translate(-50%, -80%);
+  transform: translate(-50%, -80%);
+  width: 100%; }
+
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2px;
+  white-space: nowrap; }
+  h1 span {
+    font-weight: 500; }
+
+.desc {
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 1px; }
+
+.home-menu {
+  display: none;
+  text-align: center; }
+  .home-menu a {
+    cursor: pointer; }
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (min-width: 480px) {
+  #menu_icon {
+    display: none; }
+
+  .home {
+    top: 60%; }
+
+  .home-menu {
+    display: block;
+    margin-top: 5em;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px; }
+    .home-menu ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .home-menu li {
+      margin-right: .5em;
+      display: inline-block; }
+      .home-menu li:last-child {
+        margin-right: 0; }
+    .home-menu a {
+      display: inline-block;
+      padding: .3em;
+      width: 6.2em;
+      text-align: center;
+      border: 1px solid #333;
+      text-decoration: none;
+      color: #666;
+      -webkit-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
+      -moz-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
+      -ms-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
+      -o-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
+      transition: color 1.25s, background-color 1.25s, border-color 1.25s; }
+      .home-menu a:hover {
+        color: #000;
+        background-color: rgba(250, 250, 250, 0.7);
+        border-color: rgba(250, 250, 250, 0.7); }
+    .home-menu span {
+      font-size: .7em;
+      letter-spacing: normal; } }
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.571em; }
+
+  .desc {
+    font-size: 1.428em; }
+
+  .home-menu {
+    font-size: 1.4em; }
+    .home-menu li {
+      margin-right: 1em; }
+    .home-menu a {
+      padding: .5em;
+      width: 6em; }
+    .home-menu span {
+      font-size: .7em; } }
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     ===============*/ }
+
+/*# sourceMappingURL=home.css.map */

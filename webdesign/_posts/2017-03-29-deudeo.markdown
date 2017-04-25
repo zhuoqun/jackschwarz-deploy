@@ -1,0 +1,136 @@
+---
+layout: work
+title:  DeuDeo
+permalink: /portfolio/webdesign/deudeo/
+brief: A website for the German artist Emil Waas.
+madein: 2016
+cover: /assets/img/webdesign/deudeo.jpg
+banner: /assets/img/webdesign/deudeo-banner.jpg
+catname: Web Design
+caturl: /portfolio/webdesign/
+---
+
+In 2015, more than a million refugees came to Germany to seek a safe place to live. Most of them can't speak German, so they need to learn German to integrate into the new society. However, German is one of the world's most difficult languages to learn, especially the grammar. Although the government provides free language courses to refugees, the courses are far from enough. And the refugees need to learn some useful sentences such as "where is the supermarket" immediately, but they can only learn primary grammars and words in the language school in the short term.
+
+DeuDeo is a tool to help the refugees to learn German with interactive videos. The interactive videos would be specially made for refugees. Every time the actor or actress said a word, the video will pause and the user must repeat that word. The user may not know exactly what the word means, but he can still use it in everyday life. 
+
+DeuDeo is the homework for one of my university classes. During the design process, I created the Personas, Service Journey Maps, wireframes and developed the prototype using HTML/CSS/JavaScript.
+
+**Persona 1**
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-persona1.jpg" title="Persona 1">
+        <img src="/assets/img/webdesign/content/deudeo-persona1-small.jpg" alt="Persona 1">
+    </a>
+  </div>
+
+</div>
+
+**Service Journey Map for Persona 1**
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-map1.jpg" title="Service Journey Map 1">
+        <img src="/assets/img/webdesign/content/deudeo-map1-small.jpg" alt="Service Journey Map 1">
+    </a>
+  </div>
+
+</div>
+
+**Persona 2**
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-persona2.jpg" title="Persona 2">
+        <img src="/assets/img/webdesign/content/deudeo-persona2-small.jpg" alt="Persona 2">
+    </a>
+  </div>
+
+</div>
+
+**Service Journey Map for Persona 2**
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-map2.jpg" title="Service Journey Map 2">
+        <img src="/assets/img/webdesign/content/deudeo-map2-small.jpg" alt="Service Journey Map 2">
+    </a>
+  </div>
+
+</div>
+
+
+**Wireframes**
+
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-home-loggedin.jpg" title="Wireframes: Homepage(logged in)">
+        <img src="/assets/img/webdesign/content/deudeo-home-loggedin-small.jpg" alt="Wireframes: Homepage(logged in)">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-home-unlogin.jpg" title="Wireframes: Homepage(unlogin)">
+        <img src="/assets/img/webdesign/content/deudeo-home-unlogin-small.jpg" alt="Wireframes: Homepage(unlogin)">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-discover.jpg" title="Wireframes: Discover">
+        <img src="/assets/img/webdesign/content/deudeo-discover-small.jpg" alt="Wireframes: Discover">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-settings.jpg" title="Wireframes: Settings">
+        <img src="/assets/img/webdesign/content/deudeo-settings-small.jpg" alt="Wireframes: Settings">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-profile.jpg" title="Wireframes: Profile">
+        <img src="/assets/img/webdesign/content/deudeo-profile-small.jpg" alt="Wireframes: Profile">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-video.jpg" title="Wireframes: Video Page">
+        <img src="/assets/img/webdesign/content/deudeo-video-small.jpg" alt="Wireframes: Video Page">
+    </a>
+  </div>
+
+</div>
+
+**Prototype Screenshots**
+
+<div class="img-wrapper clearfix">
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-website-welcome.jpg" title="Scrennshots: Welcome Page">
+        <img src="/assets/img/webdesign/content/deudeo-website-welcome-small.jpg" alt="Scrennshots:  Welcome Page">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-website-reg.jpg" title="Scrennshots: Register">
+        <img src="/assets/img/webdesign/content/deudeo-website-reg-small.jpg" alt="Scrennshots:  Register">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-website-cat.jpg" title="Scrennshots: Category">
+        <img src="/assets/img/webdesign/content/deudeo-website-cat-small.jpg" alt="Scrennshots:  Category">
+    </a>
+  </div>
+
+  <div class="img-container">
+    <a class="content swipebox" href="/assets/img/webdesign/content/deudeo-website-video.jpg" title="Scrennshots: Video Page">
+        <img src="/assets/img/webdesign/content/deudeo-website-video-small.jpg" alt="Scrennshots:  Video Page">
+    </a>
+  </div>
+
+</div>
+
+[Visit the prototype](/demo/deudeo/index.html)

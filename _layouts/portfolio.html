@@ -1,0 +1,43 @@
+<!doctype html>
+
+{% include head.html %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="main portfolio">
+          {% include menu.html %}
+
+          <div class="main-container">
+              <div class="wrapper clearfix">
+                <h1>{{ page.title | escape }}</h1>
+
+                <div class="cards">
+
+                  {% for cat in page.subcats %}
+                  <div class="preview">
+                    <div class="content">
+                      <h2>
+                        <a href="{{ cat.url | relative_url}}">{{ cat.name | escape }}</a>
+                      </h2>
+
+                      <img src="{{ cat.cover | relative_url}}" alt="Cover for Web Design">
+
+                    </div>
+                  </div>
+                  {% endfor %}
+
+                </div>
+
+              </div> <!-- #about -->
+          </div> <!-- #main-container -->
+
+          <div class="push"></div>
+        </div> <!-- #main-->
+
+      {% include footer.html %}
+
+    </body>
+</html>

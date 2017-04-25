@@ -1,0 +1,44 @@
+// Welcome page
+
+.intro-video {
+  border: 1px solid #CCC;
+  width: 100%;
+}
+
+.welcome {
+  padding: 40px 0;
+
+  h2 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #CCC;
+  }
+
+  .signin {
+    padding: 10px;
+    border: 1px solid #CCC;
+
+    h2 {
+      font-size: 24px;
+      margin: 10px 0 20px;
+      color: #666;
+    }
+
+    .social {
+       border-top: 1px solid #EEE;
+       margin-top: 40px;
+       padding-top: 20px;
+       text-align: center;
+
+       img {
+         margin-bottom: 10px;
+       }
+    }
+  }
+
+  .intro-text {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}

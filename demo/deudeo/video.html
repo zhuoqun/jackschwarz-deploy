@@ -1,0 +1,341 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/video-js.css">
+        <link rel="stylesheet" href="css/videojs.markers.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">DeuDeo</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+          <ul id="navbar" class="nav navbar-nav">
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="playlists.html">Collections</a></li>
+          </ul>
+
+          <ul id="navbar" class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mario <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="settings.html">Settings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="welcome.html">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="navbar-form search-form" role="search">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" autocomplete="off">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span>
+              </div>
+            </div>
+          </form>
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="video-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="video-box">
+              <video id="my-video" class="video-js" controls preload="auto" width="750px"
+                poster="img/video_cover3.jpg" data-setup="{}">
+                  <source src="img/video.mp4" type='video/mp4'>
+                  <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a web browser that
+                    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                  </p>
+              </video>
+
+              <!-- Modal -->
+              <div class="modal" id="quizModal" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="quizModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Bitte nachschreiben, was Sie gehört haben</h4>
+                    </div>
+                    <div class="modal-body">
+                      <input type="text" class="form-control" id="quizAnswer">
+                      <p id="quizCorrect" class="bg-success quiz-tip">Richtig!</p>
+                      <p id="quizTryAgian" class="bg-danger quiz-tip">Sorry, die Antwort ist falsch. Sie haben noch <span id="chances"></span>.</p>
+                      <p id="quizFail" class="bg-danger quiz-tip">Sorry, die Antwort ist falsch. Die richtige Antwort ist <span id="correctAnswer"></span>.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="quizListenAgain" type="button" class="btn btn-default">Wiederhören</button>
+                      <button id="quizSubmit" type="button" class="btn btn-primary">Antworten</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal" id="quizModal2" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="quizModalLabel2">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel2">Was hat die Frau gerade gesagt?</h4>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="options" id="option1" value="falsch">
+                            Ich habe keine Ahnung.
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="options" id="option2" value="falsch">
+                            Ich liebe Musik.
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="options" id="option3" value="richtig">
+                            Ich bekomme heute Besuch.
+                            <span id="quizCorrect2" class="bg-success quiz-tip">Richtig!</span>
+                          </label>
+                        </div>
+                        <div class="radio">
+                          <label>
+                            <input type="radio" name="options" id="option4" value="falsch">
+                            Guten Tag.
+                          </label>
+                        </div>
+                      </form>
+
+                      <p id="quizTryAgian2" class="bg-danger quiz-tip">Sorry, die Antwort ist falsch. Sie haben noch <span id="chances2"></span>.</p>
+                      <p id="quizFail2" class="bg-danger quiz-tip">Sorry, die Antwort ist falsch. </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button id="quizListenAgain2" type="button" class="btn btn-default">Wiederhören</button>
+                      <button id="quizSubmit2" type="button" class="btn btn-primary">Antworten</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal" id="endModal" tabindex="-1" role="dialog" aria-labelledby="endModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Ergebnis</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p>Es gibt <span>6</span> Fragen in diesem Video.</p>
+                      <p>Sie haben <span class="end-answered-number"></span> richtig geantwortet.</p>
+                      <p>Sie haben <span class="end-points"></span> Punkte von diesem Video bekommen. Jetzt haben Sie <span>244</span> Punkte.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <h1>Im Gemüseladen</h1>
+            <div class="meta box clearfix">
+              <div class="views pull-left">122,232</div>
+              <div class="pull-right">
+                <a href="#" class="item"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+                <a href="#" class="item"><span class="glyphicon glyphicon-heart-empty"></span> Favorite</a>
+              </div>
+            </div>
+            <div class="comments box">
+              <h2>Comments</h2>
+              <div class="input clearfix">
+                <img class="avatar" alt="avatar" src="img/avatar.jpg">
+                <textarea class="form-control comment-input" placeholder="Add a comment"></textarea>
+              </div>
+              <ul class="list">
+                <li class="clearfix">
+                <div class="user pull-left">
+                  <img src="img/avatar2.jpg" alt="avatar">
+                  <div class="name">Aldullah</div>
+                </div>
+                <div class="content">
+                  <p>Das Video ist super!</p>
+                </div>
+                <div class="post-time">
+                <span>2015-12-26 13:10:00</span>
+                </div>
+                </li>
+                <li class="clearfix">
+                <div class="user pull-left">
+                  <img src="img/avatar4.jpg" alt="avatar">
+                  <div class="name">Daniel</div>
+                </div>
+                <div class="content">
+                  <p>Das Video ist super!</p>
+                </div>
+                <div class="post-time">
+                <span>2015-12-26 13:10:00</span>
+                </div>
+                </li>
+                <li class="clearfix">
+                <div class="user pull-left">
+                  <img src="img/avatar3.jpg" alt="avatar">
+                  <div class="name">Fabian</div>
+                </div>
+                <div class="content">
+                  <p>Das Video ist super!</p>
+                </div>
+                <div class="post-time">
+                <span>2015-12-26 13:10:00</span>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="mini-profile box clearfix">
+              <img src="img/avatar.jpg" alt="avatar">
+              <div class="info">
+                <p><strong>Name:</strong> Mario</p>
+                <p><strong>Points:</strong> 240</p>
+                <p><strong>Level:</strong> 4</p>
+              </div>
+            </div>
+            <div class="online-users box">
+              <h2>People who are watching this video.</h2>
+              <ul class="clearfix">
+                <li>
+                <a href="#">
+                  <img src="img/avatar1.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar2.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar3.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar4.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar5.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar6.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar7.jpg" alt="avatar">
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                  <img src="img/avatar8.jpg" alt="avatar">
+                </a>
+                </li>
+              </ul>
+            </div>
+            <div class="related-videos box">
+              <h2>You may also like</h2>
+              <ul>
+                <li class="clearfix">
+                <img src="img/video_cover1.jpg" alt="video">
+                <div class="desc">
+                  <h3>"Ich will ein Bier"</h3>
+                  <p class="cate"><strong>Category:</strong> Beginner</p>
+                </div>
+                </li>
+                <li class="clearfix">
+                <img src="img/video_cover2.jpg" alt="video">
+                <div class="desc">
+                  <h3>"Ich will ein Bier"</h3>
+                  <p class="cate"><strong>Category:</strong> Beginner</p>
+                </div>
+                </li>
+                <li class="clearfix">
+                <img src="img/video_cover3.jpg" alt="video">
+                <div class="desc">
+                  <h3>"Ich will ein Bier"</h3>
+                  <p class="cate"><strong>Category:</strong> Beginner</p>
+                </div>
+                </li>
+                <li class="clearfix">
+                <img src="img/video_cover4.jpg" alt="video">
+                <div class="desc">
+                  <h3>"Ich will ein Bier"</h3>
+                  <p class="cate"><strong>Category:</strong> Beginner</p>
+                </div>
+                </li>
+                <li class="clearfix">
+                <img src="img/video_cover2.jpg" alt="video">
+                <div class="desc">
+                  <h3>"Ich will ein Bier"</h3>
+                  <p class="cate"><strong>Category:</strong> Beginner</p>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            Deudeo &copy; 2016
+          </div>
+          <div class="col-md-8">
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/video.js"></script>
+        <script src="js/videojs-markers.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
