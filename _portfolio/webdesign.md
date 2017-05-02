@@ -2,6 +2,6 @@
 layout: cat
 title: Web Design
 slug: webdesign
-intro: Hello. This is my works.
+intro: 
 permalink: /portfolio/webdesign/
 ---

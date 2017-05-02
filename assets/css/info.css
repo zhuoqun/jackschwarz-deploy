@@ -365,7 +365,8 @@ a {
    ========================================================================== */
 .webdesign h1, .motion h1, .appdesign h1, .typography h1 {
   font-size: 1.714em;
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
+  margin-bottom: 2em;
   letter-spacing: 1px; }
   .webdesign h1 span, .motion h1 span, .appdesign h1 span, .typography h1 span {
     color: #AAA; }
@@ -587,7 +588,7 @@ a {
      ========================== */
   .webdesign h1, .motion h1, .appdesign h1, .typography h1 {
     font-size: 3em;
-    margin-bottom: .8em;
+    /*margin-bottom: .8em;*/
     letter-spacing: 2px; }
   .webdesign .cards .preview, .motion .cards .preview, .appdesign .cards .preview, .typography .cards .preview {
     -webkit-transition: -webkit-filter 1.25s;

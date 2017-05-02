@@ -1,6 +1,6 @@
 ---
 layout: work
-title:  Play with grid
+title:  Play With Grid
 permalink: /portfolio/typography/playwithgrid/
 brief: Experiments with the grid system.
 madein: 2015

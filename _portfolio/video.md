@@ -2,6 +2,6 @@
 layout: cat
 title: Video
 slug: motion
-intro: Hello. This is my works.
+intro: 
 permalink: /portfolio/video/
 ---
