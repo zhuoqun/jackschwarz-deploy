@@ -27,7 +27,6 @@ We have a typography course in the first semester. As the homework for this cour
   <div class="img-container">
     <a class="content swipebox" href="/assets/img/typography/content/quote2.jpg" title="Taste is the enemy of the creativity.">
         <img src="/assets/img/typography/content/quote2-small.jpg" alt="Taste is the enemy of the creativity.">
-        <p class="title">Poster #2</p>
     </a>
   </div>
 </div>
