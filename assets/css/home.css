@@ -368,9 +368,9 @@ h1 {
       padding: .3em;
       width: 6.2em;
       text-align: center;
-      border: 1px solid #333;
+      border: 1px solid #999;
       text-decoration: none;
-      color: #666;
+      color: #CCC;
       -webkit-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
       -moz-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
       -ms-transition: color 1.25s, background-color 1.25s, border-color 1.25s;
